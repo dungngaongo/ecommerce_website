@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { ProductList } from './components/product-list/product-list';
 import { HttpClientModule } from '@angular/common/http';
-import { Product } from './services/product';
+import { ProductService } from './services/product';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { Product } from './services/product';
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
-    Product
+    ProductService
   ],
   bootstrap: [App]
 })
